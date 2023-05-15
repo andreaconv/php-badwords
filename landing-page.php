@@ -1,7 +1,7 @@
 <?php 
 
 $paragrafo = $_GET['paragrafo'];
-$censura = $_GET['password'];
+$password = $_GET['password'];
 
 ?>
 
@@ -26,6 +26,8 @@ $censura = $_GET['password'];
   <h1>Paragrafo inserito</h1>
   <p><?php echo $paragrafo ?></p>
   <span>Il paragrafo qui sopra è lungo <?php echo strlen($paragrafo) ?> caratteri</span>
+
+  <h2>La parola da censurare è <span><?php echo $password ?></span></h2>
   
 </body>
 </html>
